@@ -1,10 +1,7 @@
-class PrintNumbers	
-{
-public static void main(String args[])
-{
-for(int count=1;count<=100;count++)
-{
-System.out.print(count + "\t" );
-}
-}
+public class PrintNumbers {
+	public static void main(String args[]) {
+		for(int count=1;count<=100;count++) {
+			System.out.print(count + "\t" );
+		}
+	}
 }
