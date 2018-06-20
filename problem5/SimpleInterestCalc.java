@@ -1,6 +1,8 @@
 import java.util.Scanner;
-public class SimpleInterestCalc{
-	public static void main(String args[]){
+
+public class SimpleInterestCalc {
+
+	public static void main(String args[]) {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the Principal:");
 		double principal=s.nextDouble();
