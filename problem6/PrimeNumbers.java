@@ -1,6 +1,8 @@
   import java.util.Scanner;
-public class PrimeNumbers{
-	public static void main(String args[]){
+
+public class PrimeNumbers {
+
+	public static void main(String args[]) {
         Scanner s=new Scanner(System.in);
         System.out.println("Enter the number:");
 	int inputNumber = s.nextInt();
@@ -12,7 +14,7 @@ public class PrimeNumbers{
                 System.out.println("Number is not prime");
 
 	} else{	
-	    for(int i=2;i<inputNumber;i++){
+	    for(int i = 2;i < inputNumber;i++){
 		if(inputNumber % i == 0){
 			isPrime = false;
               		break;
@@ -28,8 +30,3 @@ public class PrimeNumbers{
 	}	
 }
 }
-		
-		
-		
-		
-
