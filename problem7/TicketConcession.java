@@ -7,10 +7,20 @@ public class TicketConcession  {
 	public static void main(String args[]) {
 		Scanner s=new Scanner(System.in);
 		System.out.println("Enter the age:");
-		int age=s.nextInt();
-  		Scanner sc=new Scanner(System.in);
+		int age = 0, distance = 0;
+		try {
+			age = s.nextInt();
+		} catch(java.util.InputMismatchException e) {
+			System.out.println("Enter valid digit for age.");
+			throw e;
+		}
 		System.out.println("Enter the Distance in KM:");
-		int distance=sc.nextInt();
+		try {
+			distance = s.nextInt();
+		} catch(java.util.InputMismatchException e) {
+			System.out.println("Enter valid digit for distance.");
+                        throw e;
+		}
 		double ticketprice=distance * 2.5;
 		if(age < 3){
 			System.out.println("no charges for childrens..happy journey....");
