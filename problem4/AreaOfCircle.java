@@ -1,6 +1,7 @@
 import java.util.Scanner;
-public class AreaOfCircle{
-	public static void main(String args[]){
+public class AreaOfCircle {
+
+	public static void main(String args[]) {
 		Scanner s=new Scanner(System.in);
 		System.out.println("enter the radius");
 		int radius=s.nextInt();
