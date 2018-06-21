@@ -6,11 +6,15 @@ public class PersonsDetails {
 		Scanner s = new Scanner(System.in);
 		System.out.println("enter your name:");
 		String pname = s.next(); 
-		System.out.println("Enter your age:");
-		int age = s.nextInt();
+		System.out.println("Enter your Gender:");
+		String gender = s.next();
 		System.out.println("your marital status:");
-		String mstatus = s.next();	
-		System.out.println("Mr/Ms " + pname + " " + "is" + " " + age + " " + "years old and Marital status is" + " " + mstatus );
+		String mstatus = s.next();
+		if( gender == "female" || gender =="F"||gender =="FEMALE"||gender 
+            =="Female"||gender =="f")
+{
+		System.out.println("Enter your Gender:");
+}		
 		s.close();
 	}
 }
