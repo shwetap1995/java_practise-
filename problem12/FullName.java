@@ -1,13 +1,19 @@
 import java.util.Scanner;
-public class FullName{
-   public static void main(String args[]){
-Scanner s = new Scanner(System.in);
-System.out.println("fname mname lname");
-String str = s.next(); 
-       String pstr = new String(str);
-       String array1[]= str.split(" ");
-       for (String temp: array1){
-          System.out.println(temp);
-       }
-}
+
+public class FullName {
+	
+	public static void main(String args[]) {
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter the size:");
+		int number=s.nextInt();	
+		String arraystring[] = new String[number];
+		System.out.println("firstname middlename lastname:");
+		for(int i = 0;i < arraystring.length;i++) {
+			arraystring[i]=s.next();
+		}
+		for(int i = 0;i < arraystring.length;i++) {
+			System.out.println(arraystring[i]);
+		}
+		s.close();
+	}	
 }
